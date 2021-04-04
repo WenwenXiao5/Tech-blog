@@ -60,7 +60,7 @@ def addpost():
 
 @app.route('/news')
 def news():
-    url = ('http://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY')
+    url = ('http://newsapi.org/v2/top-headlines?country=us&apiKey=58a98952294a47f383d0c1df243cd242')
     response = requests.get(url)
     data = response.json()
     articles = data ['articles']
